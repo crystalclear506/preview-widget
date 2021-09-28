@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component should be rendered correctly 1`] = `
+<div
+  className="previewWidgetContainer"
+>
+  <div
+    className="previewContainer"
+  >
+    <img
+      alt="No Image"
+      src=""
+    />
+  </div>
+  <div
+    className="grid"
+  >
+    <div
+      className="thumbnail"
+    >
+       
+      <img
+        alt="No Image"
+      />
+       
+    </div>
+  </div>
+</div>
+`;

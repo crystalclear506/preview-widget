@@ -5,16 +5,15 @@ import styles from './preview-widget.scss';
 const PreviewWidget = (props) => {
     const [index, setIndex] = useState(0);
     return (
-        (props.imageUrls && props.imageUrls.length > 0) &&
         <div className={styles.previewWidgetContainer}>
             <div className={styles.previewContainer}>
-                <img src={props.imageUrls.length > 0 ? props.imageUrls[index] : ''}></img>
+                <img src={props.imageUrls && props.imageUrls.length > 0 ? props.imageUrls[index] : ''} alt="No Image"></img>
             </div>
             <div className={styles.grid}>
                 {
-                    props.imageUrls.map((url, i) => {
-                        return <div key={i} onClick={ () => { setIndex(i) } } className={styles.thumbnail}> <img src={url}></img> </div>
-                    })
+                    props.imageUrls ? props.imageUrls.map((url, i) => 
+                        <div key={i} onClick={ () => { setIndex(i) } } className={styles.thumbnail}> <img src={url}></img> </div>
+                    ) : <div className={styles.thumbnail}> <img alt="No Image"></img> </div>
                 }
             </div>
         </div>
