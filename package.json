@@ -25,9 +25,7 @@
     "rollup-plugin-postcss": "^4.0.1",
     "rollup-plugin-scss": "^3.0.0",
     "sass": "^1.38.2",
-    "sass-loader": "^12.1.0"
-  },
-  "peerDependencies": {
+    "sass-loader": "^12.1.0",
     "react": "^17.0.2"
   },
   "devDependencies": {
